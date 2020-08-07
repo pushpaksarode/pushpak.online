@@ -1,0 +1,76 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+
+#particles-js{
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+
+
+.container{
+    position: absolute;
+    width:400px;
+    width: 100vw;
+    text-align: center;
+    top:31vh;
+}
+
+h3{
+    font-family: monospace;
+    font-size: 48px;
+    margin: 15px 0px;
+    /* cursor: pointer; */
+    color: black
+}
+
+p{
+    font-family: monospace;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    font-size: 14px;
+    color:rgb(2, 8, 56);
+}
+
+hr{
+    width: 40vw;
+    border:1px solid black;
+    background-color: black;
+}
+
+p a,a{
+    text-decoration: none;
+    font-family: cursive;
+    color: black;
+}
+.profileLogo{
+    margin: 20px;
+    height:40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.profileLogo:hover{
+    filter: invert(10%);
+}
+
+@media (max-width:500px){
+    #particles-js{
+        background-image: url(bg2.jpg);
+    }
+
+    h3{
+        font-size: 35px;
+    }
+
+    hr{
+        width: 90vw;
+    }
+
+    .footer{
+        margin-top:98px;
+    }
+}
