@@ -11,16 +11,18 @@ body{
 }
 
 .particles-js-canvas-el{
-    position:absolute;
-    z-index:9998
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none; /* allow clicks through the particle canvas */
 }
 
 .container{
     position: absolute;
-    width:400px;
+    z-index: 2; /* ensure interactive content sits above the particle layer */
     width: 100vw;
     text-align: center;
-    top:31vh;
+    top: 31vh;
 }
 
 h3{
